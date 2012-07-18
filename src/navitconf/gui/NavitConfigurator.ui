@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NavitConfiguratorClass</class>
+ <widget class="QMainWindow" name="NavitConfiguratorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>612</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>259</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>NavitConfigurator</string>
+  </property>
+  <widget class="QWidget" name="widgetMain">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>9</number>
+      </property>
+      <widget class="QFrame" name="widgetLeft">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <layout class="QGridLayout" name="widgetLeftGridLayout">
+        <property name="verticalSpacing">
+         <number>3</number>
+        </property>
+        <property name="margin">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Tree View</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widgetCenter" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidgetMain">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tabTagContent">
+           <attribute name="title">
+            <string>Selected &amp;Node</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <property name="horizontalSpacing">
+             <number>3</number>
+            </property>
+            <property name="margin">
+             <number>3</number>
+            </property>
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Path:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="tbxNodePath">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTabWidget" name="tabWidgetNode">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tabNodeAttribute">
+               <attribute name="title">
+                <string>A&amp;ttributes</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <property name="margin">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QTableView" name="tableView">
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tabNodeComment">
+               <attribute name="title">
+                <string>&amp;Comment</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_8">
+                <property name="margin">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QPlainTextEdit" name="tbxNodeComment">
+                  <property name="font">
+                   <font>
+                    <family>Courier New</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab">
+               <attribute name="title">
+                <string>So&amp;urce</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_9">
+                <property name="margin">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QPlainTextEdit" name="tbxSource">
+                  <property name="font">
+                   <font>
+                    <family>Courier New</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabConsole">
+           <attribute name="title">
+            <string>Conso&amp;le</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <property name="margin">
+             <number>3</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QPlainTextEdit" name="tbxConsole"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="comboBoxShowConsole">
+              <item>
+               <property name="text">
+                <string>Show Console on All Changes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Show Console on Errors or Warnings</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Show Console on Errors</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Do Not Show Console Automatically</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="btnClearConsole">
+              <property name="text">
+               <string>&amp;Clear</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>612</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecent1"/>
+    <addaction name="actionRecent2"/>
+    <addaction name="actionRecent3"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuAndroid">
+    <property name="title">
+     <string>&amp;Android</string>
+    </property>
+    <addaction name="actionRun"/>
+    <addaction name="actionAutoSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionInstallNavit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Navit">
+    <property name="title">
+     <string>&amp;Wizards</string>
+    </property>
+    <addaction name="actionSelectStartingPosition"/>
+    <addaction name="actionManageNavitMenu"/>
+    <addaction name="actionNavitViewEditor"/>
+    <addaction name="actionGeneralSettings"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menu_Navit"/>
+   <addaction name="menuAndroid"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/document-open-4.png</normaloff>:/images/document-open-4.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open a navit.xml file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/document-save-2.png</normaloff>:/images/document-save-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="iconText">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the changed navit.xml file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About...</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/edit-undo-7.png</normaloff>:/images/edit-undo-7.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo last change</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/edit-redo-7.png</normaloff>:/images/edit-redo-7.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/media-playback-start-3.png</normaloff>:/images/media-playback-start-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Run</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionAutoSave">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>S&amp;ave Navit File Before Running (on/off)</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/application-exit-2.png</normaloff>:/images/application-exit-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/document-new-3.png</normaloff>:/images/document-new-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/document-save-as-2.png</normaloff>:/images/document-save-as-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sa&amp;ve As...</string>
+   </property>
+  </action>
+  <action name="actionRecent1">
+   <property name="text">
+    <string>&amp;1 Recent</string>
+   </property>
+   <property name="toolTip">
+    <string>Open this file</string>
+   </property>
+  </action>
+  <action name="actionRecent2">
+   <property name="text">
+    <string>&amp;2 Recent</string>
+   </property>
+   <property name="toolTip">
+    <string>Open this file</string>
+   </property>
+  </action>
+  <action name="actionRecent3">
+   <property name="text">
+    <string>&amp;3 Recent</string>
+   </property>
+   <property name="toolTip">
+    <string>Open fhis file</string>
+   </property>
+  </action>
+  <action name="actionSelectStartingPosition">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/go-home-5.png</normaloff>:/images/go-home-5.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select &amp;Starting Position...</string>
+   </property>
+  </action>
+  <action name="actionManageNavitMenu">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/tools-wizard-2.png</normaloff>:/images/tools-wizard-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manage Navit &amp;Menu...</string>
+   </property>
+  </action>
+  <action name="actionInstallNavit">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/navit-icon.png</normaloff>:/images/navit-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Install Navit on Device</string>
+   </property>
+  </action>
+  <action name="actionGeneralSettings">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/configure-2.png</normaloff>:/images/configure-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;General Settings...</string>
+   </property>
+  </action>
+  <action name="actionNavitViewEditor">
+   <property name="icon">
+    <iconset resource="../../../NavitConfigurator.qrc">
+     <normaloff>:/images/gui_maps_16_16.png</normaloff>:/images/gui_maps_16_16.png</iconset>
+   </property>
+   <property name="text">
+    <string>Navit View Editor...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../NavitConfigurator.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionOpen</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNew</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuNew()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuSave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSaveAs</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuSaveAs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRecent1</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuRecent1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRecent2</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuRecent2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRecent3</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuRecent3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionUndo</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuUndo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRedo</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuRedo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSelectStartingPosition</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuSelectStartingPosition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRun</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuRun()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionManageNavitMenu</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuManageNavitMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGeneralSettings</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuGeneralSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClearConsole</sender>
+   <signal>clicked()</signal>
+   <receiver>tbxConsole</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionInstallNavit</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuInstallNavit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNavitViewEditor</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuNavitViewEditor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onTabSourceTextChanged()</slot>
+  <slot>onBtnCancel()</slot>
+  <slot>onMenuNew()</slot>
+  <slot>onMenuOpen()</slot>
+  <slot>onMenuSave()</slot>
+  <slot>onMenuSaveAs()</slot>
+  <slot>onMenuRecent1()</slot>
+  <slot>onMenuRecent2()</slot>
+  <slot>onMenuRecent3()</slot>
+  <slot>onMenuUndo()</slot>
+  <slot>onMenuRedo()</slot>
+  <slot>onMenuSelectStartingPosition()</slot>
+  <slot>onMenuManageNavitMenu()</slot>
+  <slot>onMenuNavitViewEditor()</slot>
+  <slot>onMenuGeneralSettings()</slot>
+  <slot>onMenuRun()</slot>
+  <slot>onMenuInstallNavit()</slot>
+  <slot>onMenuAbout()</slot>
+ </slots>
+</ui>

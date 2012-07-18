@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogGeneralSettings</class>
+ <widget class="QWidget" name="DialogGeneralSettings">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>141</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>141</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>General Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCheckBox" name="checkBoxInternalKeyboard">
+     <property name="text">
+      <string>Use Internel &amp;Keyboard</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Default &amp;Vehicle:</string>
+     </property>
+     <widget class="QComboBox" name="comboBoxDefaultVehicle">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>211</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string extracomment="car">Car</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/gui_vehicle_16_16.png</normaloff>:/images/vehicles/gui_vehicle_16_16.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Car - Shortest Route</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/pictograms-nps-4-wheel-drive_road.png</normaloff>:/images/vehicles/pictograms-nps-4-wheel-drive_road.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Car - Avoid Tolls</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/pictograms-nps-land-driving_tour-2.png</normaloff>:/images/vehicles/pictograms-nps-land-driving_tour-2.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bike</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/pictograms-nps-bicycle_trail-2.png</normaloff>:/images/vehicles/pictograms-nps-bicycle_trail-2.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string extracomment="pedastrian">Pedastrian</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/gui_vehicle_pedestrian_16_16.png</normaloff>:/images/vehicles/gui_vehicle_pedestrian_16_16.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Horse</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/pictograms-nps-horseback_riding.png</normaloff>:/images/vehicles/pictograms-nps-horseback_riding.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Truck</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../NavitConfigurator.qrc">
+         <normaloff>:/images/vehicles/pictograms-nps-misc-trucks.png</normaloff>:/images/vehicles/pictograms-nps-misc-trucks.png</iconset>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../NavitConfigurator.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogGeneralSettings</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogGeneralSettings</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="/">
+    <file>images/gui_maps_16_16.png</file>
+    <file>images/edit-add.png</file>
+    <file>images/edit-delete-6.png</file>
+    <file>NavitConfigurator.ico</file>
+    <file>images/document-new-3.png</file>
+    <file>images/document-open-4.png</file>
+    <file>images/document-save-2.png</file>
+    <file>images/document-save-as-2.png</file>
+    <file>images/application-exit-2.png</file>
+    <file>images/edit-redo-7.png</file>
+    <file>images/edit-undo-7.png</file>
+    <file>images/go-home-5.png</file>
+    <file>images/media-playback-start-3.png</file>
+    <file>images/tools-wizard-2.png</file>
+    <file>images/configure-2.png</file>
+    <file>images/navit-icon.png</file>
+    <file>images/vehicles/gui_vehicle_16_16.png</file>
+    <file>images/vehicles/gui_vehicle_pedestrian_16_16.png</file>
+    <file>images/vehicles/pictograms-nps-4-wheel-drive_road.png</file>
+    <file>images/vehicles/pictograms-nps-bicycle_trail-2.png</file>
+    <file>images/vehicles/pictograms-nps-horseback_riding.png</file>
+    <file>images/vehicles/pictograms-nps-misc-trucks.png</file>
+    <file>images/vehicles/pictograms-nps-land-driving_tour-2.png</file>
+  </qresource>
+</RCC>

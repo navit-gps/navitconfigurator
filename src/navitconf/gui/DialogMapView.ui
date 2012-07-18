@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogMapView</class>
+ <widget class="QDialog" name="DialogMapView">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>735</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Navit View Editor</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <layout class="QVBoxLayout" name="graphicsViewLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGraphicsView" name="graphicsView"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="buttonAdd">
+              <property name="text">
+               <string>&amp;Add</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../../NavitConfigurator.qrc">
+                <normaloff>:/images/edit-add.png</normaloff>:/images/edit-add.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="buttonDelete">
+              <property name="text">
+               <string>&amp;Delete</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../../NavitConfigurator.qrc">
+                <normaloff>:/images/edit-delete-6.png</normaloff>:/images/edit-delete-6.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>&amp;Display Size in Pixel:</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_2">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <property name="leftMargin">
+             <number>3</number>
+            </property>
+            <property name="topMargin">
+             <number>6</number>
+            </property>
+            <property name="rightMargin">
+             <number>6</number>
+            </property>
+            <property name="bottomMargin">
+             <number>6</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="comboBoxDisplaySize">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <item>
+               <property name="text">
+                <string>240 x 160 (HQVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>320 x 240 (QVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>400 x 240 (WQVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>480 x 320 (HVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>640 x 480 (VGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>800 x 480 (WVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>854 x 480 (FWVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>800 x 600 (SVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>960 x 640 (DVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1024 x 576 (WSVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1024 x 600 (WSVGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1024 x 768 (XGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1152 X 864 (XGA+)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1280 x 720 (WXGA 16:9)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1280 x 768 (WXGA 5:3)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1280 x 800 (WXGA 16:10)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1280 x 960 (SXGA 4:3)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1280 x 1024 (SXGA 5:4)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1360 x 768 (HD)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1366 x 768 (HD)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1400 x 1050 (SXGA+)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1440 x 900 (WXGA+)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1600 x 900 (HD+)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1600 x 1200 (UXGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1680 x 1050 (WSXGA+)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1920 x 1080 (FHD)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1920 x 1200 (WUXGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2048 x 1152 (QWXGA)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2560 x 1440 (WQHD)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2560 x 1600 (WQXGA)</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="checkBoxLandscape">
+              <property name="text">
+               <string>&amp;Landscape</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="toolTip">
+          <string>Click on this link to open your standard browser with the following link: http://wiki.navit-project.org/index.php/On_Screen_Display</string>
+         </property>
+         <property name="text">
+          <string>Help available at &lt;a href=&quot;http://wiki.navit-project.org/index.php/On_Screen_Display&quot;&gt;wiki.navit-project.org&lt;/a&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>OSD Graphical Box Item &amp;Properties:</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="margin">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QTableView" name="tableViewBoxProperties">
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="buttonUndo">
+           <property name="toolTip">
+            <string>Undo the last change</string>
+           </property>
+           <property name="text">
+            <string>&amp;Undo</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../NavitConfigurator.qrc">
+             <normaloff>:/images/edit-undo-7.png</normaloff>:/images/edit-undo-7.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonRedo">
+           <property name="text">
+            <string>&amp;Redo</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../NavitConfigurator.qrc">
+             <normaloff>:/images/edit-redo-7.png</normaloff>:/images/edit-redo-7.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDialogButtonBox" name="buttonBox">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="standardButtons">
+            <set>QDialogButtonBox::Close</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../NavitConfigurator.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>723</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonUndo</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>buttonUndoClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonRedo</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>buttonRedoClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>531</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxDisplaySize</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>comboBoxDisplaySizeIndexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>614</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxLandscape</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>comboBoxDisplaySizeIndexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>552</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>buttonAddClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>735</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>groupBox</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>buttonDeleteClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogMapView</receiver>
+   <slot>buttonDeleteClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>403</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>732</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>comboBoxDisplaySizeIndexChanged()</slot>
+  <slot>tableViewBoxPropertiesChanged(QModelIndex)</slot>
+  <slot>buttonAddClicked()</slot>
+  <slot>buttonDeleteClicked()</slot>
+  <slot>buttonUndoClicked()</slot>
+  <slot>buttonRedoClicked()</slot>
+  <slot>close()</slot>
+ </slots>
+</ui>

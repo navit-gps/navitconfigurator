@@ -1,24 +1,39 @@
+/**
+ * NavitConfigurator, makes it easy to configure Navit
+ * Copyright (C) 2012 Raimar Bühmann
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #include <QtGui/QApplication>
 #include <QtCore/QLocale>
 #include <QtCore/QTranslator>
+#include <QtCore/QLibraryInfo>
 
-#include <QtCore/QDebug>
 #include <QtGui/QIcon>
 
 #include "navitconf/gui/NavitConfigurator.h"
 
 /**
  * Set the translated language depending on definition in the operation system.
- * The *.qm files stored in the program folder are used for other language than
- * English. The file qt_DE.qm is copied from /usr/share/qt4/translations/
- * to the program folder.
  *
  * Follow these steps to create a new language translation:
  * 1. Add a language file name (e.g. NavitConfigurator_fr.ts) to the following
  *    line in the pro-file to activate further language translations
  *    separated by spaces:
  * <pre>
- * TRANSLATIONS = NavitConfigurator_de.ts
+ * TRANSLATIONS += NavitConfigurator_de.ts
  * </pre>
  * 2. Then create the language translation file (e.g. NavitConfigurator_fr.ts) with
  * <pre>
@@ -51,11 +66,19 @@ void inline setLanguage() {
 	}
 	// set language for Qt library
     static QTranslator qtTranslator;
-    qtTranslator.load("qt_" + local);
+#ifdef __unix__
+    QString dir(QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+#else
+    QString dir; // from exe folder
+#endif
+    qtTranslator.load("qt_" + local, dir);
     QApplication::installTranslator(&qtTranslator);
     // set language for application
     static QTranslator myappTranslator;
-    myappTranslator.load("NavitConfigurator_" + local);
+#ifdef __unix__
+    dir = "/usr/share/navitconfigurator";
+#endif
+    myappTranslator.load("navitconfigurator_" + local, dir);
     QApplication::installTranslator(&myappTranslator);
 }
 

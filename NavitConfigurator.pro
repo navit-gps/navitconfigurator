@@ -9,9 +9,11 @@
 # - src/quazip/JlCompress.cpp
 # - src/zlib/example.c
 # - src/zlib/minigzip.c
+win32 {
+	INCLUDEPATH += D:\\Sprache\\Qt\\4.7.4\\include
+}
 CONFIG += debug_and_release
 TEMPLATE = app
-TARGET = NavitConfigurator
 QT += core \
     gui \
     xml \
@@ -136,11 +138,38 @@ FORMS += src/navitconf/gui/DialogMapView.ui \
     src/navitconf/gui/DialogDownload.ui \
     src/navitconf/gui/NavitConfigurator.ui
 
-# icon for exe file on windows
-win32:RC_FILE += NavitConfigurator.rc
-
 # store icons in the program file defined in the following qrc file
 RESOURCES += NavitConfigurator.qrc
 
 # translations for other language than english (only german yet)
-TRANSLATIONS = NavitConfigurator_de.ts
+TRANSLATIONS += NavitConfigurator_de.ts
+
+# define the target for the binary file
+win32 {
+    # icon for exe file on windows
+    RC_FILE += NavitConfigurator.rc
+    TARGET = NavitConfigurator
+}
+unix {
+    # binary file
+    TARGET = navitconfigurator
+    target.path = /usr/bin
+    INSTALLS += target
+
+    # icon for menu link
+    icon.path = /usr/share/pixmaps
+    icon.files = navitconfigurator.png
+    INSTALLS += icon
+
+    # menu link
+    menu_link.path = /usr/share/applications
+    menu_link.files = navitconfigurator.desktop
+    INSTALLS += menu_link
+
+    # translation files
+    translation.path = /usr/share/navitconfigurator
+    translation.files = navitconfigurator_de.qm
+    INSTALLS += translation
+    
+    # /usr/share/qt4/translation/qt_de.qm installed with qt4
+}

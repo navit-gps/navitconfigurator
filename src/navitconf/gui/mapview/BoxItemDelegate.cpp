@@ -1,15 +1,25 @@
-/*
- * BoxItemDelegate.cpp
+/**
+ * NavitConfigurator, makes it easy to configure Navit
+ * Copyright (C) 2012 Raimar Bühmann
  *
- *  Created on: 24.06.2012
- *      Author: remo
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "BoxItemDelegate.h"
 
 #include <cstddef>
 
-#include <QtCore/QDebug>
 #include <QtCore/QMetaProperty>
 
 #include <QtGui/QColorDialog>
@@ -118,7 +128,6 @@ void BoxItemDelegate::setModelData(QWidget* editor, QAbstractItemModel* model, c
 		}
 		case BoxGraphicsItem::OSD_TEXT_COLOR:
 		case BoxGraphicsItem::OSD_BACKGROUND_COLOR: {
-			qDebug() << "BoxItemDelegate::setModelData()";
 			return;
 		}
 		default:

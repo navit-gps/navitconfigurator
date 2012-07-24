@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=NavitConfigurator
+Comment=Editor for the configuration file of Navit
+Comment[de]=Editor für die Konfigurationsdatei von Navit
+Icon=navitconfigurator
+Type=Application
+Categories=Utility
+Exec=navitconfigurator
+StartupNotify=false
+Terminal=false

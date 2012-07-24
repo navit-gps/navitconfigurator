@@ -1,8 +1,19 @@
-/*
- * TreeRemoveTagCommand.cpp
+/**
+ * NavitConfigurator, makes it easy to configure Navit
+ * Copyright (C) 2012 Raimar Bühmann
  *
- *  Created on: 20.05.2012
- *      Author: remo
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "AbstractTreeNodeCommand.h"
@@ -24,7 +35,6 @@ AbstractTreeNodeCommand::~AbstractTreeNodeCommand() {
 }
 
 TreeItem& AbstractTreeNodeCommand::removeNode() {
-//	qDebug("removeTreeItem(): row=%d with parent", row);
 //	model.println(parentIndex);
 	model.beginRemoveRows(parentIndex, row, row);
 	TreeItem& removedTreeItem = *model.getTreeItem(parentIndex).removeChild(row);
@@ -35,7 +45,6 @@ TreeItem& AbstractTreeNodeCommand::removeNode() {
 }
 
 void AbstractTreeNodeCommand::insertNode(TreeItem& newTreeItem) {
-//	qDebug("insertTreeItem(): row=%d with parent", row);
 //	model.println(parentIndex);
 	model.beginInsertRows(parentIndex, row, row);
 	model.getTreeItem(parentIndex).insertChild(row, newTreeItem);

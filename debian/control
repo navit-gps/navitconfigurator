@@ -1,7 +1,7 @@
 Source: navitconfigurator
 Section: editors
 Priority: extra
-Maintainer: Raimar Bühmann
+Maintainer: Raimar Bühmann <navitconfigurator@web.de>
 Build-Depends: debhelper, cdbs, libqt4-dev
 Standards-Version: 3.9.2
 Homepage: http://sourceforge.net/projects/navitconfigurat/

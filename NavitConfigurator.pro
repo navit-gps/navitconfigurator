@@ -166,10 +166,10 @@ unix {
     menu_link.files = navitconfigurator.desktop
     INSTALLS += menu_link
 
-    # translation files
-    translation.path = /usr/share/navitconfigurator
-    translation.files = navitconfigurator_de.qm
-    INSTALLS += translation
+    # program translation file to german
+    programtranslation.path = /usr/share/navitconfigurator
+    programtranslation.files = navitconfigurator_de.qm
+    INSTALLS += programtranslation
     
     # /usr/share/qt4/translation/qt_de.qm installed with qt4
 }

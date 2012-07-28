@@ -20,9 +20,12 @@
 
 #include <QtCore/QUrl>
 #include <QtCore/QStringList>
+
 #include <QtGui/QMessageBox>
+
 #include <QtWebKit/QWebPage>
 #include <QtWebKit/QWebFrame>
+#include <QtWebKit/QWebElement>
 
 #include <navitconf/data/TreeItem.h>
 

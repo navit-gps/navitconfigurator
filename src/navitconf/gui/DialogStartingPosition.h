@@ -24,8 +24,6 @@
 #include <QtGui/QWidget>
 #include <QtGui/QDialog>
 
-#include <QtWebKit/QWebElement>
-
 #include "ui_DialogStartingPosition.h"
 
 #include <navitconf/data/TreeModel.h>

@@ -22,12 +22,8 @@
 
 #include <QtGui/QMessageBox>
 
-#include <QtWebKit/QWebPage>
-#include <QtWebKit/QWebFrame>
-
 #include <navitconf/file/Settings.h>
 
-// gui 1/#cdata-section"
 const char* const DialogManageNavitMenu::MENU_DATA_PATH = "config/navit/gui[enabled=yes,type=internal]/#cdata-section";
 
 DialogManageNavitMenu::DialogManageNavitMenu(QWidget& parent, TreeModel& treeModel)

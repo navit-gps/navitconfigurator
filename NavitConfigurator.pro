@@ -153,7 +153,7 @@ win32 {
 unix {
     # binary file
     TARGET = navitconfigurator
-    target.path = /usr/bin
+    target.path = /usr/share/navitconfigurator
     INSTALLS += target
 
     # icon for menu link
@@ -167,9 +167,9 @@ unix {
     INSTALLS += menu_link
 
     # program translation file to german
-    programtranslation.path = /usr/share/navitconfigurator
-    programtranslation.files = navitconfigurator_de.qm
-    INSTALLS += programtranslation
+    qm.path = /usr/share/navitconfigurator
+    qm.files = navitconfigurator_de.qm
+    INSTALLS += qm
     
     # /usr/share/qt4/translation/qt_de.qm installed with qt4
 }

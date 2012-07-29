@@ -153,7 +153,7 @@ win32 {
 unix {
     # binary file
     TARGET = navitconfigurator
-    target.path = /usr/share/navitconfigurator
+    target.path = /usr/bin
     INSTALLS += target
 
     # icon for menu link

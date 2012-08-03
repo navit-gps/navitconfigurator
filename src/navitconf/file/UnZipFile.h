@@ -16,17 +16,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UNZIP_H_
-#define UNZIP_H_
+#ifndef UNZIPFILE_H_
+#define UNZIPFILE_H_
 
-#include <QString>
+#include <QtCore/QString>
 #include <quazip/quazip.h>
 
 /**
  * Utility class for decompressing all files in a zip-file.
  * @see DialogDownload
  */
-class Unzip {
+class UnZipFile {
 public:
 	/**
 	 * Opens a ZIP-file for decompression.
@@ -34,8 +34,8 @@ public:
 	 * @param targetDir The target folder.
 	 * @throw QString If something goes wrong.
 	 */
-	Unzip(const QString& zipFile, const QString& targetDir);
-	virtual ~Unzip();
+	UnZipFile(const QString& zipFile, const QString& targetDir);
+	virtual ~UnZipFile();
 
 	/**
 	 * Uncompress fileSource from the given ZIP-file in the constructor and
@@ -76,4 +76,4 @@ private:
 	QString nextFilename;
 };
 
-#endif /* UNZIP_H_ */
+#endif /* UNZIPFILE_H_ */

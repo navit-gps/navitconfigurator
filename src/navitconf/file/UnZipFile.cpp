@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "Unzip.h"
+#include "UnZipFile.h"
 
 #include <QtCore/QDir>
 #include <QtCore/QFile>
@@ -24,7 +24,7 @@
 
 #include <quazip/quazipfile.h>
 
-Unzip::Unzip(const QString& zipFile, const QString& targetDir)
+UnZipFile::UnZipFile(const QString& zipFile, const QString& targetDir)
 :
 		zip(zipFile),
 		targetDir(targetDir),
@@ -44,10 +44,10 @@ Unzip::Unzip(const QString& zipFile, const QString& targetDir)
 	nextFilename = zip.getCurrentFileName();
 }
 
-Unzip::~Unzip() {
+UnZipFile::~UnZipFile() {
 }
 
-QString Unzip::extract(const QString& fileSource) {
+QString UnZipFile::extract(const QString& fileSource) {
 	if (!zip.setCurrentFile(fileSource)) {
 		throw QString("Opening file in ZIP-file failed: ")+zip.getZipName()+"/"+fileSource;
 	}
@@ -66,19 +66,19 @@ QString Unzip::extract(const QString& fileSource) {
 	return extractedFile;
 }
 
-int Unzip::getNumberOfFiles() const {
+int UnZipFile::getNumberOfFiles() const {
 	return numberOfFiles;
 }
 
-QString Unzip::getNextFilename() const {
+QString UnZipFile::getNextFilename() const {
 	return nextFilename;
 }
 
-bool Unzip::hasNext() const {
+bool UnZipFile::hasNext() const {
 	return !nextFilename.isEmpty();
 }
 
-QString Unzip::extractNext() {
+QString UnZipFile::extractNext() {
 	QuaZipFile quaZipFile(&zip);
 	if (!quaZipFile.open(QIODevice::ReadOnly)) {
 		throw QString(zip.getZipError());

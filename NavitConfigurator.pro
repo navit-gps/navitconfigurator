@@ -10,7 +10,8 @@
 # - src/zlib/example.c
 # - src/zlib/minigzip.c
 win32 {
-	INCLUDEPATH += D:\\Sprache\\Qt\\4.7.4\\include
+	# set your installation path here for correct include files
+	INCLUDEPATH += D:\\Sprache\\Qt\\include
 }
 CONFIG += debug_and_release
 TEMPLATE = app
@@ -48,7 +49,7 @@ HEADERS += src/navitconf/gui/mapview/BoxItemAttribute.h \
     src/navitconf/data/TreeItem.h \
     src/navitconf/file/Document.h \
     src/navitconf/file/Settings.h \
-    src/navitconf/file/Unzip.h \
+    src/navitconf/file/UnZipFile.h \
     src/navitconf/gui/DialogDownload.h \
     src/navitconf/gui/NavitConfigurator.h \
     src/navitconf/gui/TabNode.h \
@@ -103,7 +104,7 @@ SOURCES += src/navitconf/gui/mapview/BoxItemAttribute.cpp \
     src/main.cpp \
     src/navitconf/file/Document.cpp \
     src/navitconf/file/Settings.cpp \
-    src/navitconf/file/Unzip.cpp \
+    src/navitconf/file/UnZipFile.cpp \
     src/navitconf/gui/DialogDownload.cpp \
     src/navitconf/gui/NavitConfigurator.cpp \
     src/navitconf/gui/TabNode.cpp \
@@ -146,6 +147,7 @@ TRANSLATIONS += NavitConfigurator_de.ts
 
 # define the target for the binary file
 win32 {
+    DEFINES += QUAZIP_STATIC
     # icon for exe file on windows
     RC_FILE += NavitConfigurator.rc
     TARGET = NavitConfigurator

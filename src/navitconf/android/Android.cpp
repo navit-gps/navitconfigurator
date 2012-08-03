@@ -18,6 +18,8 @@
 
 #include "Android.h"
 
+#include <QtCore/QDir>
+
 const static char* const ADB_PROGAM_NAME = "adb";
 
 Android::Android(const char* const INTEND_NAME)
@@ -87,8 +89,21 @@ QStringList Android::getKeyEventParams(int keyCode) const {
 
 QString Android::exec(const QString& programName, const QStringList& params) const {
 	QProcess p;
-	p.start(programName, params);
-	p.waitForFinished(20000); // timeout 20 seconds
+	QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+	QString programPath = programName;
+#ifdef __unix__
+	QString pathList = env.value("PATH");
+	QStringList folders = pathList.split(':');
+	folders.append("/usr/local/android-sdk/platform-tools");
+	for (int i = 0; i < folders.size(); i++) {
+		if (QDir(folders[i]).exists(programName)) {
+			programPath = folders[i] + "/" + programName;
+			i = folders.size();
+		}
+	}
+#endif
+	p.start(programPath, params);
+	bool isOk = p.waitForFinished(20000); // timeout 20 seconds
 	QString result;
 	result.append(programName);
 	for (int i = 0; i < params.size(); i++) {
@@ -98,5 +113,11 @@ QString Android::exec(const QString& programName, const QStringList& params) con
 	result.append('\n');
 	result.append(p.readAllStandardOutput()); // out
 	result.append(p.readAllStandardError());
+	if (!isOk) {
+		result.append("PATH=");
+		result.append(env.value("PATH"));
+		result.append('\n');
+		result.append("error: ").append(p.errorString());
+	}
 	return result;
 }

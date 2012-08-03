@@ -21,7 +21,7 @@
 #include <QtGui/QMessageBox>
 
 #include <navitconf/file/Settings.h>
-#include <navitconf/file/Unzip.h>
+#include <navitconf/file/UnZipFile.h>
 
 QString DialogDownload::download(QWidget* parent) {
 	DialogDownload dialog(parent);
@@ -95,7 +95,7 @@ void DialogDownload::extractNavitXml(const QString& zipFile) {
 	try {
 		QString dirSettings(Settings::getInstance().getDir().absolutePath());
 		// extract all files from archive
-		Unzip unzip(zipFile, dirSettings);
+		UnZipFile unzip(zipFile, dirSettings);
 		for (int i = 0; i < unzip.getNumberOfFiles(); i++) {
 			if (!unzip.getNextFilename().startsWith("lib/")) { // ignore files in the lib folder
 				unzip.extractNext();

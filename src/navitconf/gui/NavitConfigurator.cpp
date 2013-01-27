@@ -19,12 +19,14 @@
 #include "NavitConfigurator.h"
 
 #include <QtCore/QStringList>
+#include <QtCore/QUrl>
 
 #include <QtGui/QUndoStack>
 #include <QtGui/QFileDialog>
 #include <QtGui/QMessageBox>
 #include <QtGui/QUndoView>
 #include <QtGui/QIcon>
+#include <QtGui/QDesktopServices>
 
 #include "DialogDownload.h"
 #include "DialogStartingPosition.h"
@@ -321,6 +323,12 @@ QString NavitConfigurator::getHint(const QString& description, const QString& re
 		hint.append(tr("Please check USB/Bluetooth/WLAN connection between PC and device."));
 	}
 	return QString(description).append(":\n").append(result).append("\n\n").append(hint);
+}
+
+void NavitConfigurator::onMenuDownloadMap() {
+	if (!QDesktopServices::openUrl(QUrl(tr("http://jff-webhosting.net/osm/navit/world/")))) {
+		QMessageBox::critical(this, tr("Error"), tr("The URL could not be opened in a browser."));
+	}
 }
 
 void NavitConfigurator::onMenuAbout() {

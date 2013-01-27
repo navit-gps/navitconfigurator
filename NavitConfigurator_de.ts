@@ -4,102 +4,102 @@
 <context>
     <name>BoxItemDelegate</name>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="27"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="37"/>
         <source>Auxiliary Map</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="28"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="38"/>
         <source>Button</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="29"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="39"/>
         <source>Command Interface</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="30"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="40"/>
         <source>Compass</source>
         <translation>Kompass</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="31"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="41"/>
         <source>GPS Status</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="32"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="42"/>
         <source>Image</source>
         <translation>Bild</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="33"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="43"/>
         <source>Navigation</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="34"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="44"/>
         <source>Navigation Distance to Next</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="35"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="45"/>
         <source>Navigation Distance to Target</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="36"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="46"/>
         <source>Navigation Next Turn</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="37"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="47"/>
         <source>Odometer</source>
         <translation>Kilometerzähler</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="38"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="48"/>
         <source>Route Guard</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="39"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="49"/>
         <source>Scale</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="40"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="50"/>
         <source>Speed Camera</source>
         <translation>Radarwarner</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="41"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="51"/>
         <source>Speed Warner</source>
         <translation>Geschwindigkeits-Warner</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="42"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="52"/>
         <source>Stopwatch</source>
         <translation>Stoppuhr</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="43"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="53"/>
         <source>Text</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="44"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="54"/>
         <source>Toggle Announcer</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="45"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="55"/>
         <source>Volume</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="80"/>
+        <location filename="src/navitconf/gui/mapview/BoxItemDelegate.cpp" line="90"/>
         <source>Color Chooser</source>
         <translation>Farbauswahl</translation>
     </message>
@@ -107,10 +107,10 @@
 <context>
     <name>DialogDownload</name>
     <message>
-        <location filename="src/navitconf/gui/DialogDownload.cpp" line="26"/>
-        <location filename="src/navitconf/gui/DialogDownload.cpp" line="41"/>
-        <location filename="src/navitconf/gui/DialogDownload.cpp" line="64"/>
-        <location filename="src/navitconf/gui/DialogDownload.cpp" line="91"/>
+        <location filename="src/navitconf/gui/DialogDownload.cpp" line="42"/>
+        <location filename="src/navitconf/gui/DialogDownload.cpp" line="57"/>
+        <location filename="src/navitconf/gui/DialogDownload.cpp" line="80"/>
+        <location filename="src/navitconf/gui/DialogDownload.cpp" line="107"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -223,7 +223,7 @@
         <translation>LKW</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogGeneralSettings.cpp" line="56"/>
+        <location filename="src/navitconf/gui/DialogGeneralSettings.cpp" line="73"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -236,19 +236,19 @@
         <translation>Navit Menu Manager</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="40"/>
+        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="53"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="50"/>
-        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="119"/>
+        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="63"/>
+        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="132"/>
         <source>The path %1 has not been found in the navit configuration file.</source>
         <oldsource>The path %1 has not been found in the navit configuration file</oldsource>
         <translation>Der Pfad %1 konnte in der Navit Konfigurationsdatei nicht gefunden werden.</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="73"/>
+        <location filename="src/navitconf/gui/DialogManageNavitMenu.cpp" line="86"/>
         <source>Parsing error in line %1 column %2: %3</source>
         <translation>Fehler bei Verarbeitung in Zeile %1 Spalte %2: %3</translation>
     </message>
@@ -461,7 +461,7 @@
         <translation>&amp;Wiederherstellen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/mapview/DialogMapView.cpp" line="70"/>
+        <location filename="src/navitconf/gui/mapview/DialogMapView.cpp" line="87"/>
         <source>Value</source>
         <translation>Wert</translation>
     </message>
@@ -479,18 +479,18 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="63"/>
-        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="66"/>
+        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="83"/>
+        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="86"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="64"/>
+        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="84"/>
         <source>The path %1 has not been found in the navit configuration file.</source>
         <translation>Der Pfad %1 konnte in der Navit Konfigurationsdatei nicht gefunden werden.</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="67"/>
+        <location filename="src/navitconf/gui/DialogStartingPosition.cpp" line="87"/>
         <source>Please choose a starting position first.</source>
         <translation>Bitte zuerst eine Startposition auswählen.</translation>
     </message>
@@ -498,22 +498,22 @@
 <context>
     <name>Document</name>
     <message>
-        <location filename="src/navitconf/file/Document.cpp" line="54"/>
+        <location filename="src/navitconf/file/Document.cpp" line="65"/>
         <source>Opening file failed: </source>
         <translation>Öffnen der Datei fehlgeschlagen: </translation>
     </message>
     <message>
-        <location filename="src/navitconf/file/Document.cpp" line="74"/>
+        <location filename="src/navitconf/file/Document.cpp" line="85"/>
         <source>Error in file &apos;%1&apos; line %2 column %3: %4</source>
         <translation>Fehler in Datei &apos;%1&apos; Zeile %2 Spalte %3: %4</translation>
     </message>
     <message>
-        <location filename="src/navitconf/file/Document.cpp" line="88"/>
+        <location filename="src/navitconf/file/Document.cpp" line="99"/>
         <source>Opening file for writing failed: </source>
         <translation>Öffnen der Datei zum Schreiben fehlgeschlagen: </translation>
     </message>
     <message>
-        <location filename="src/navitconf/file/Document.cpp" line="94"/>
+        <location filename="src/navitconf/file/Document.cpp" line="105"/>
         <source>Writing file failed: </source>
         <translation>Schreiben der Datei fehlgeschlagen: </translation>
     </message>
@@ -521,72 +521,84 @@
 <context>
     <name>NavitConfigurator</name>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="141"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="171"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="281"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="291"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="294"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="161"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="191"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="301"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="311"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="314"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="330"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="169"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="189"/>
         <source>File saved</source>
         <translation>Datei gespeichert</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="179"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="199"/>
         <source>Question</source>
         <translation>Frage</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="180"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="200"/>
         <source>The current Navit configuration file has been modified. Save changes?</source>
         <translation>Die aktuelle Navit-Konfigurations-Datei wurde geändert. Änderungen speichern?</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="215"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="230"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="235"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="250"/>
         <source>Choose a navit.xml file</source>
         <translation>navit.xml Datei auswählen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="281"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="301"/>
         <source>Running Navit on device failed</source>
         <translation>Navit konnte nicht auf dem Android Handy ausgeführt werden</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="291"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="311"/>
         <source>Installation failed</source>
         <translation>Installation fehlgeschlagen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="294"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="314"/>
         <source>Please download a new version of Navit first with File-&gt;New.</source>
         <translation>Bitte zuerst eine neue Version von Navit über das Menü Datei-&gt;Neu downloaden.</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="301"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="321"/>
         <source>Please restart the adb service on your computer with root previledges:
 adb kill-server
 sudo adb root</source>
         <translation>Bitte den adb Dienst auf diesem Rechner mit Administrator Rechten starten: adk killserver sudo adb root</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="303"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="323"/>
         <source>Please check USB/Bluetooth/WLAN connection between PC and device.</source>
         <oldsource>Please check USB/Bluetooth/WLAN connection, e.g. connect PC and device with USB cable.</oldsource>
         <translation>Bitte USB/Bluetooth/WLAN Verbindung zwischen Rechner und Handy prüfen.</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="309"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="329"/>
+        <source>http://jff-webhosting.net/osm/navit/world/</source>
+        <translatorcomment>Open the specific europe page instead of the world page for downloading a map.</translatorcomment>
+        <translation>http://jff-webhosting.net/osm/navit/world/europe/</translation>
+    </message>
+    <message>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="330"/>
+        <source>The URL could not be opened in a browser.</source>
+        <translation>Die URL konnte nicht mit einem Browser geöffnet werden.</translation>
+    </message>
+    <message>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="335"/>
         <source>About NavitConfigurator</source>
         <translation>Über NavitConfigurator</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="310"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="336"/>
         <source>&lt;p&gt;&lt;b&gt;NavitConfigurator&lt;/b&gt; makes it easy to edit your navit.xml file.&lt;/p&gt;&lt;p&gt;Credits go to the developer of Navit, Qt, QuaZip and zlib. The icons are from &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This program is developed for PAdI (Praktische Aspekte der Informatik) at the technical university in Brunswick.&lt;/p&gt;&lt;p&gt;For updates see &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012 by Raimar B&amp;uuml;hmann&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mit &lt;b&gt;NavitConfigurator&lt;/b&gt; ist es einfach, die navit.xml Datei zu ändern.&lt;/p&gt;&lt;p&gt;Dank geht an die Entwicklern von Navit, Qt, QuaZip und zlib. Die Icons sind von &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Dieses Programm wurde für PAdI (Praktische Aspekte der Informatik) an der TU Braunschweig entwickelt.&lt;/p&gt;&lt;p&gt;Updates werden veröffentlich unter &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012 by Raimar B&amp;uuml;hmann&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Mit &lt;b&gt;NavitConfigurator&lt;/b&gt; ist es einfach, die navit.xml Datei zu ändern.&lt;/p&gt;&lt;p&gt;Dank geht an die Entwickler von Navit, Qt, QuaZip und zlib. Die Icons sind von &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Dieses Programm wurde für PAdI (Praktische Aspekte der Informatik) an der TU Braunschweig entwickelt.&lt;/p&gt;&lt;p&gt;Updates werden veröffentlich unter &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012 by Raimar B&amp;uuml;hmann&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -602,7 +614,7 @@ sudo adb root</source>
         <translation>Gewählter K&amp;noten</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="206"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="203"/>
         <source>So&amp;urce</source>
         <translation>Q&amp;uelle</translation>
     </message>
@@ -622,223 +634,233 @@ sudo adb root</source>
         <translation>A&amp;ttribute</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="184"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="181"/>
         <source>&amp;Comment</source>
         <translation>&amp;Kommentar</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="232"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="229"/>
         <source>Conso&amp;le</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="248"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="245"/>
         <source>Show Console on All Changes</source>
         <translation>Zeige Console bei allen Änderungen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="253"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="250"/>
         <source>Show Console on Errors or Warnings</source>
         <translation>Zeige Console bei Fehlern oder Warnungen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="258"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="255"/>
         <source>Show Console on Errors</source>
         <translation>Zeige Console bei Fehlern</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="263"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="260"/>
         <source>Do Not Show Console Automatically</source>
         <translation>Zeige Console nicht automatisch</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="271"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="268"/>
         <source>&amp;Clear</source>
         <translation>Lös&amp;chen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="296"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="293"/>
         <source>&amp;File</source>
         <translation>&amp;Datei</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="311"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="308"/>
         <source>&amp;Help</source>
         <translation>&amp;Hilfe</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="317"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="316"/>
         <source>&amp;Edit</source>
         <translation>B&amp;earbeiten</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="324"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="323"/>
         <source>&amp;Android</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="353"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="352"/>
         <source>&amp;Open...</source>
         <translation>&amp;Öffnen...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="356"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="355"/>
         <source>Open a navit.xml file</source>
         <translation>Öffne eine navit.xml Datei</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="359"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="358"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="371"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="370"/>
         <source>&amp;Save</source>
         <translation>&amp;Speichern</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="374"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="373"/>
         <source>Save</source>
         <translation>Speichern</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="377"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="376"/>
         <source>Save the changed navit.xml file</source>
         <translation>Speichere die geänderte navit.xml Datei</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="380"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="379"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="385"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="384"/>
+        <source>&amp;Download Map (jff-webhosting.net)</source>
+        <translation>Karte &amp;Downloaden (jff-webhosting.net)</translation>
+    </message>
+    <message>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="387"/>
+        <source>Open your default browser to manually download a map from http://jff-webhosting.net</source>
+        <translation>Öffnet den Standard Browser, um eine Karte von http://jff-webhosting.net manuell herunter zu laden</translation>
+    </message>
+    <message>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="392"/>
         <source>&amp;About...</source>
         <translation>&amp;Über...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="397"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="404"/>
         <source>&amp;Undo</source>
         <translation>&amp;Rückgängig</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="400"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="407"/>
         <source>Undo last change</source>
         <translation>Letzte Änderung rückgängig machen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="412"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="419"/>
         <source>&amp;Redo</source>
         <translation>&amp;Wiederherstellen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="513"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="520"/>
         <source>Manage Navit &amp;Menu...</source>
         <translation>Navit &amp;Menu Manager...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="522"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="529"/>
         <source>&amp;Install Navit on Device</source>
         <translation>Navit auf Handy &amp;installieren</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="531"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="538"/>
         <source>&amp;General Settings...</source>
         <translation>&amp;Allgemeine Einstellungen...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="540"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="547"/>
         <source>Navit View Editor...</source>
         <translation>Navit Ansicht Editor...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="543"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="550"/>
         <source>Ctrl+E</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="476"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="483"/>
         <source>&amp;1 Recent</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="479"/>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="487"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="486"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="494"/>
         <source>Open this file</source>
         <translation>Diese Datei öffnen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="484"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="491"/>
         <source>&amp;2 Recent</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="492"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="499"/>
         <source>&amp;3 Recent</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="495"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="502"/>
         <source>Open fhis file</source>
         <translation>Diese Datei öffnen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="504"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="511"/>
         <source>Select &amp;Starting Position...</source>
         <translation>&amp;Startposition auswählen...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="403"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="410"/>
         <source>Ctrl+Z</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="333"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="332"/>
         <source>&amp;Wizards</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="415"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="422"/>
         <source>Ctrl+Y</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="424"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="431"/>
         <source>&amp;Run</source>
         <translation>Ausfüh&amp;ren</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="427"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="434"/>
         <source>Ctrl+R</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="438"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="445"/>
         <source>S&amp;ave Navit File Before Running (on/off)</source>
         <translation>Speichere N&amp;avit Datei vor dem Ausführen (an/aus)</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="447"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="454"/>
         <source>E&amp;xit</source>
         <translation>&amp;Beenden</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="450"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="457"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="459"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="466"/>
         <source>&amp;New...</source>
         <translation>&amp;Neu...</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="462"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="469"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="471"/>
+        <location filename="src/navitconf/gui/NavitConfigurator.ui" line="478"/>
         <source>Sa&amp;ve As...</source>
         <translation>Speichern &amp;unter...</translation>
     </message>
@@ -846,7 +868,7 @@ sudo adb root</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="src/navitconf/gui/mapview/BoxGraphicsItem.cpp" line="33"/>
+        <location filename="src/navitconf/gui/mapview/BoxGraphicsItem.cpp" line="43"/>
         <source>S=type=Type Name,B=osd_configuration=OSD Configuration,S=label=Label,S=command=Command,S=src=Source,S=icon_src=Icon Source,B==Horizontal Align=Left|Right,B==Vertical Align=Top|Bottom,I=x=X-Position,I=y=Y-Position,I=w=Width,I=h=Height,B==Use Size,C=background_color=Background Color,C=text_color=Text Color</source>
         <translation></translation>
     </message>
@@ -862,12 +884,12 @@ sudo adb root</source>
 <context>
     <name>TabNode</name>
     <message>
-        <location filename="src/navitconf/gui/TabNode.cpp" line="66"/>
+        <location filename="src/navitconf/gui/TabNode.cpp" line="77"/>
         <source>Attribute</source>
         <translation>Attribut</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TabNode.cpp" line="67"/>
+        <location filename="src/navitconf/gui/TabNode.cpp" line="78"/>
         <source>Value</source>
         <translation>Wert</translation>
     </message>
@@ -875,17 +897,17 @@ sudo adb root</source>
 <context>
     <name>TreeModel</name>
     <message>
-        <location filename="src/navitconf/data/TreeModel.cpp" line="152"/>
+        <location filename="src/navitconf/data/TreeModel.cpp" line="162"/>
         <source>Nodes</source>
         <translation>Knoten</translation>
     </message>
     <message>
-        <location filename="src/navitconf/data/TreeModel.cpp" line="154"/>
+        <location filename="src/navitconf/data/TreeModel.cpp" line="164"/>
         <source>Node Attributes</source>
         <translation>Knoten-Attribute</translation>
     </message>
     <message>
-        <location filename="src/navitconf/data/TreeModel.cpp" line="208"/>
+        <location filename="src/navitconf/data/TreeModel.cpp" line="218"/>
         <source>Inserting node with empty name is not allowed.</source>
         <translation>Einfügen eines Knotens ohne Namen nicht erlaubt.</translation>
     </message>
@@ -893,32 +915,32 @@ sudo adb root</source>
 <context>
     <name>TreeView</name>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="76"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="87"/>
         <source>&amp;Insert Node</source>
         <translation>Knoten e&amp;infügen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="77"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="88"/>
         <source>&amp;Rename Node</source>
         <translation>Knoten &amp;umbenennen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="78"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="89"/>
         <source>&amp;Delete Node</source>
         <translation>Knoten &amp;löschen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="80"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="91"/>
         <source>&amp;Expand All Children</source>
         <translation>Alle Kinder &amp;ausklappen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="81"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="92"/>
         <source>&amp;Collaps All Children</source>
         <translation>Alle Kinder &amp;einklappen</translation>
     </message>
     <message>
-        <location filename="src/navitconf/gui/TreeView.cpp" line="82"/>
+        <location filename="src/navitconf/gui/TreeView.cpp" line="93"/>
         <source>Debug &amp;Tree</source>
         <translation>Debug &amp;Baum</translation>
     </message>

@@ -10,8 +10,9 @@
 # - src/zlib/example.c
 # - src/zlib/minigzip.c
 win32 {
-	# set your installation path here for correct include files
-	INCLUDEPATH += D:\\Sprache\\Qt\\include
+	# aktivate static build to include all dlls in one exe file
+	# CONFIG += static
+	
 }
 CONFIG += debug_and_release
 TEMPLATE = app
@@ -22,6 +23,12 @@ QT += core \
     webkit
 INCLUDEPATH += src \
     src/zlib
+FORMS += src/navitconf/gui/DialogMapView.ui \
+    src/navitconf/gui/DialogGeneralSettings.ui \
+    src/navitconf/gui/DialogManageNavitMenu.ui \
+    src/navitconf/gui/DialogStartingPosition.ui \
+    src/navitconf/gui/DialogDownload.ui \
+    src/navitconf/gui/NavitConfigurator.ui
 HEADERS += src/navitconf/gui/mapview/BoxItemAttribute.h \
     src/navitconf/gui/mapview/TableComboBox.h \
     src/navitconf/gui/mapview/BoxItemDelegate.h \
@@ -132,12 +139,6 @@ SOURCES += src/navitconf/gui/mapview/BoxItemAttribute.cpp \
     src/zlib/trees.c \
     src/zlib/uncompr.c \
     src/zlib/zutil.c
-FORMS += src/navitconf/gui/DialogMapView.ui \
-    src/navitconf/gui/DialogGeneralSettings.ui \
-    src/navitconf/gui/DialogManageNavitMenu.ui \
-    src/navitconf/gui/DialogStartingPosition.ui \
-    src/navitconf/gui/DialogDownload.ui \
-    src/navitconf/gui/NavitConfigurator.ui
 
 # store icons in the program file defined in the following qrc file
 RESOURCES += NavitConfigurator.qrc
@@ -147,10 +148,16 @@ TRANSLATIONS += NavitConfigurator_de.ts
 
 # define the target for the binary file
 win32 {
-    DEFINES += QUAZIP_STATIC
-    # icon for exe file on windows
-    RC_FILE += NavitConfigurator.rc
-    TARGET = NavitConfigurator
+	# static build
+	#DEFINES += QT_STATIC
+	DEFINES += QUAZIP_STATIC
+	# icon for exe file on windows
+	RC_FILE += NavitConfigurator.rc
+	# binary file (copy all needed files to binary folder)
+	TARGET = NavitConfigurator
+	target.path = win32
+	target.files = release/$${TARGET}.exe debug/QtXml4.dll debug/QtXml4.dll debug/QtWebKit4.dll debug/QtNetwork4.dll debug/QtGui4.dll debug/QtCore4.dll debug/mingwm10.dll debug/libgcc_s_dw2-1.dll NavitConfigurator_de.qm
+	INSTALLS += target
 }
 unix {
     # binary file
@@ -170,7 +177,7 @@ unix {
 
     # program translation file to german
     qm.path = /usr/share/navitconfigurator
-    qm.files = navitconfigurator_de.qm
+    qm.files = NavitConfigurator_de.qm
     INSTALLS += qm
     
     # /usr/share/qt4/translation/qt_de.qm installed with qt4

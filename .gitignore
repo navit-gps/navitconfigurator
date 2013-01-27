@@ -1,0 +1,12 @@
+/Makefile
+/Makefile.Debug
+/Makefile.Release
+/object_script.NavitConfigurator.Debug
+/object_script.NavitConfigurator.Release
+/navitconfigurator
+/NavitConfigurator.exe
+/debug/*
+/release/*
+/ui_*.h
+/doc/*
+/win32

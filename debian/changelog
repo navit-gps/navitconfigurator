@@ -1,3 +1,9 @@
+navitconfigurator (1.0.2) stable; urgency=low
+
+  * Added recommends line in control file pointing to android-tools-adb
+
+ -- Raimar Bühmann <navitconfigurator@web.de>  Sun, 27 Jan 2013 19:32:01 +0200
+
 navitconfigurator (1.0-1) stable; urgency=low
 
   * Initial release

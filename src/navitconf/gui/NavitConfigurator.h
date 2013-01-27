@@ -64,6 +64,7 @@ public slots:
 	void onMenuGeneralSettings();
 	void onMenuRun();
 	void onMenuInstallNavit();
+	void onMenuDownloadMap();
 	void onMenuAbout();
 
 	void onTabSourceTextChanged();

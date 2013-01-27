@@ -78,7 +78,7 @@ void inline setLanguage() {
 #ifdef __unix__
     dir = "/usr/share/navitconfigurator";
 #endif
-    myappTranslator.load("navitconfigurator_" + local, dir);
+    myappTranslator.load("NavitConfigurator_" + local, dir);
     QApplication::installTranslator(&myappTranslator);
 }
 

@@ -172,9 +172,6 @@
                   <attribute name="horizontalHeaderStretchLastSection">
                    <bool>true</bool>
                   </attribute>
-                  <attribute name="horizontalHeaderStretchLastSection">
-                   <bool>true</bool>
-                  </attribute>
                  </widget>
                 </item>
                </layout>
@@ -310,6 +307,8 @@
     <property name="title">
      <string>&amp;Help</string>
     </property>
+    <addaction name="actionDownloadMap"/>
+    <addaction name="separator"/>
     <addaction name="actionAbout"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -378,6 +377,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionDownloadMap">
+   <property name="text">
+    <string>&amp;Download Map (jff-webhosting.net)</string>
+   </property>
+   <property name="toolTip">
+    <string>Open your default browser to manually download a map from http://jff-webhosting.net</string>
    </property>
   </action>
   <action name="actionAbout">
@@ -697,6 +704,22 @@
    <signal>activated()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRedo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDownloadMap</sender>
+   <signal>activated()</signal>
+   <receiver>NavitConfiguratorClass</receiver>
+   <slot>onMenuDownloadMap()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>

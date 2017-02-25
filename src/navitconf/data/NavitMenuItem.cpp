@@ -29,7 +29,7 @@ NavitMenuItem::NavitMenuItem()
 {
 	setText("");
 	setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsDropEnabled);
-	setData(Qt::blue, Qt::TextColorRole);
+	setForeground(Qt::blue);
 }
 
 NavitMenuItem::NavitMenuItem(QDomNode& node, const QString& iconFolder, NavitMenuItem& parent)
@@ -44,7 +44,7 @@ NavitMenuItem::NavitMenuItem(QDomNode& node, const QString& iconFolder, NavitMen
 		setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsDragEnabled);
 	} else {
 		setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled);
-		setData(Qt::blue, Qt::TextColorRole);
+		setForeground(Qt::blue);
 	}
 	parent.appendRow(reinterpret_cast<QStandardItem*>(this));
 }

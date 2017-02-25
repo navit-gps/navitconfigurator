@@ -26,7 +26,7 @@
 #include <QtCore/QList>
 #include <QtCore/QMap>
 
-#include <QtGui/QUndoStack>
+#include <QtWidgets/QUndoStack>
 
 #include "TreeItem.h"
 

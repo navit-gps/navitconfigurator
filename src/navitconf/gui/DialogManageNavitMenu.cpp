@@ -20,7 +20,7 @@
 
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QMessageBox>
 
 #include <navitconf/file/Settings.h>
 
@@ -76,7 +76,7 @@ void DialogManageNavitMenu::init() {
 		model.appendRow(&rootItem);
 		ui.treeView->setModel(&model);
 		// auto with of column
-		ui.treeView->header()->setResizeMode(0, QHeaderView::ResizeToContents);
+		ui.treeView->header()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 		// select main menu
 		ui.treeView->selectionModel()->select(model.index(0, 0), QItemSelectionModel::Select);
 		// open all nodes

@@ -165,7 +165,7 @@
     <message>
         <location filename="src/navitconf/gui/DialogDownload.ui" line="131"/>
         <source>&amp;Low Resolution (navitldpi.xml)</source>
-        <translation>&amp;Geringe Auflösung (navitldpi.xml)</translation>
+        <translation type="unfinished">&amp;Niedrige Auflösung (navitldpi.xml)</translation>
     </message>
 </context>
 <context>
@@ -581,9 +581,9 @@ sudo adb root</source>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="329"/>
-        <source>http://jff-webhosting.net/osm/navit/world/</source>
+        <source>https://jff-webhosting.net/daten/osm/navit/</source>
         <translatorcomment>Open the specific europe page instead of the world page for downloading a map.</translatorcomment>
-        <translation>http://jff-webhosting.net/osm/navit/world/europe/</translation>
+        <translation>https://jff-webhosting.net/daten/osm/navit/europe/</translation>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="330"/>
@@ -597,8 +597,8 @@ sudo adb root</source>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="336"/>
-        <source>&lt;p&gt;&lt;b&gt;NavitConfigurator&lt;/b&gt; makes it easy to edit your navit.xml file.&lt;/p&gt;&lt;p&gt;Credits go to the developer of Navit, Qt, QuaZip and zlib. The icons are from &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This program is developed for PAdI (Praktische Aspekte der Informatik) at the technical university in Brunswick.&lt;/p&gt;&lt;p&gt;For updates see &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012 by Raimar B&amp;uuml;hmann&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mit &lt;b&gt;NavitConfigurator&lt;/b&gt; ist es einfach, die navit.xml Datei zu ändern.&lt;/p&gt;&lt;p&gt;Dank geht an die Entwickler von Navit, Qt, QuaZip und zlib. Die Icons sind von &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Dieses Programm wurde für PAdI (Praktische Aspekte der Informatik) an der TU Braunschweig entwickelt.&lt;/p&gt;&lt;p&gt;Updates werden veröffentlich unter &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012 by Raimar B&amp;uuml;hmann&lt;/p&gt;</translation>
+        <source>&lt;p&gt;&lt;b&gt;NavitConfigurator&lt;/b&gt; makes it easy to edit your navit.xml file.&lt;/p&gt;&lt;p&gt;Credits go to the developer of Navit, Qt, QuaZip and zlib. The icons are from &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This program is developed for PAdI (Praktische Aspekte der Informatik) at the technical university in Brunswick.&lt;/p&gt;&lt;p&gt;For updates see &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012-2017 by Raimar B&amp;uuml;hmann&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Mit &lt;b&gt;NavitConfigurator&lt;/b&gt; ist es einfach, die navit.xml Datei zu ändern.&lt;/p&gt;&lt;p&gt;Dank geht an die Entwickler von Navit, Qt, QuaZip und zlib. Die Icons sind von &lt;a href=&apos;http://openiconlibrary.sourceforge.net/&apos;&gt;openiconlibrary.sourceforge.net&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Dieses Programm wurde für PAdI (Praktische Aspekte der Informatik) an der TU Braunschweig entwickelt.&lt;/p&gt;&lt;p&gt;Updates werden veröffentlich unter &lt;a href=&apos;http://sourceforge.net/p/navitconfigurat&apos;&gt;sourceforge.net/p/navitconfigurat&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copyright 2012-2017 by Raimar B&amp;uuml;hmann&lt;/p&gt;</translation>
     </message>
 </context>
 <context>

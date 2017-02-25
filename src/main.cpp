@@ -16,12 +16,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtGui/QApplication>
 #include <QtCore/QLocale>
 #include <QtCore/QTranslator>
 #include <QtCore/QLibraryInfo>
 
 #include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
 
 #include "navitconf/gui/NavitConfigurator.h"
 

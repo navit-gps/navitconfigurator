@@ -27,12 +27,12 @@
 #include <QtXml/QDomDocument>
 #include <QtXml/QDomNodeList>
 
-#include <QtGui/QTreeView>
-#include <QtGui/QTableView>
-#include <QtGui/QPlainTextEdit>
-#include <QtGui/QLineEdit>
 #include <QtGui/QStandardItemModel>
-#include <QtGui/QUndoStack>
+#include <QtWidgets/QTreeView>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QUndoStack>
 
 #include <navitconf/data/TreeModel.h>
 #include <navitconf/gui/TabNode.h>

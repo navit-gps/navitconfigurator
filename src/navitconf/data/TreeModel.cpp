@@ -94,16 +94,13 @@ QModelIndex TreeModel::parent(const QModelIndex& childIndex) const {
 
 QVariant TreeModel::data(const QModelIndex& index, int role) const {
 	if (role == Qt::ForegroundRole) {
-	    if (hasTreeItem(index)) {
+		if (hasTreeItem(index)) {
 			if (getTreeItem(index).getDomNode().isComment()) {
 				return QBrush(QColor::fromRgb(0, 0x80, 0));
 			}
-	    }
-		return Qt::black;
-	} else if (role == Qt::DisplayRole || role == Qt::EditRole) {
-		if (!index.isValid()) {
-			return QVariant(); // nothing to return
 		}
+		return QColor(Qt::black);
+	} else if ((role == Qt::DisplayRole || role == Qt::EditRole) && index.isValid()) {
 		const TreeItem& item = getTreeItem(index);
 		const QDomNode& node = item.getDomNode();
 		switch (index.column()) {
@@ -130,7 +127,7 @@ QVariant TreeModel::data(const QModelIndex& index, int role) const {
 					return attributes.join(" ");
 				}
 			default:
-				return QVariant();
+				break;
 		}
 	}
     return QVariant(); // nothing to return
@@ -308,10 +305,8 @@ QMap<QString, QString> TreeModel::getAttributeMap(const QString& attributes) {
 bool TreeModel::hasAttributes(const QDomNode& node, const QMap<QString, QString>& attributeMap) {
 	for (QMap<QString, QString>::const_iterator it = attributeMap.begin(); it != attributeMap.end(); it++) {
 		if (node.attributes().contains(it.key())) {
-			if (!it.value().isEmpty()) {
-				if (node.attributes().namedItem(it.key()).nodeValue() != it.value()) {
-					return false;
-				}
+			if (!it.value().isEmpty() && node.attributes().namedItem(it.key()).nodeValue() != it.value()) {
+				return false;
 			}
 		} else {
 			return false;

@@ -21,9 +21,9 @@
 
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QWidget>
-#include <QtGui/QDialog>
 #include <QtGui/QStandardItemModel>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QDialog>
 
 #include "ui_DialogMapView.h"
 

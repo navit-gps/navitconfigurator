@@ -21,7 +21,7 @@
 #include <cstddef>
 
 #include <QtCore/QTextStream>
-#include <QtGui/QHeaderView>
+#include <QtWidgets/QHeaderView>
 #include <QtXml/QDomNode>
 
 #include <navitconf/data/TreeItem.h>
@@ -63,8 +63,6 @@ void TabNode::setupUi(QTabWidget* tabWidgetMain, QTabWidget* tab, QLineEdit* txf
 	this->tbxComment = tbxComment;
 	this->tbxSource = tbxSource;
 
-	// resize first column automatically
-	tbvAttributes->horizontalHeader()->setResizeMode(0, QHeaderView::ResizeToContents);
 	// select only one row
 	tbvAttributes->setSelectionMode(QAbstractItemView::SingleSelection);
 	tbvAttributes->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -78,6 +76,8 @@ void TabNode::setupUi(QTabWidget* tabWidgetMain, QTabWidget* tab, QLineEdit* txf
 	attributesModel->setHorizontalHeaderItem(1, new QStandardItem(tr("Value")));
 	// set data model to table view
 	tbvAttributes->setModel(attributesModel);
+	// resize first column automatically
+	tbvAttributes->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 
 	// each tab shows 2 spaces
 	tbxComment->setTabStopWidth(2);

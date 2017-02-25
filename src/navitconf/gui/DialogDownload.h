@@ -19,7 +19,7 @@
 #ifndef DIALOGDOWLOAD_H
 #define DIALOGDOWLOAD_H
 
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
 #include "ui_DialogDownload.h"
 

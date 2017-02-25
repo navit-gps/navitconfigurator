@@ -22,7 +22,7 @@
 
 #include <QtCore/QMetaProperty>
 
-#include <QtGui/QColorDialog>
+#include <QtWidgets/QColorDialog>
 
 #include "TableComboBox.h"
 #include "BoxGraphicsItem.h"

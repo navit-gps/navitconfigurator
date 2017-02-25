@@ -22,10 +22,10 @@
 #include <QtCore/QPoint>
 #include <QtCore/QAbstractItemModel>
 
-#include <QtGui/QTreeView>
-#include <QtGui/QWidget>
-#include <QtGui/QGridLayout>
-#include <QtGui/QAction>
+#include <QtWidgets/QTreeView>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QAction>
 
 /**
  * Extends the normal QTreeView for enabling the context menu.

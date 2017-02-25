@@ -21,8 +21,8 @@
 
 #include <QtCore/QString>
 
-#include <QtGui/QWidget>
-#include <QtGui/QDialog>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QDialog>
 
 #include "ui_DialogStartingPosition.h"
 

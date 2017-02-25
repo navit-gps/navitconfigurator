@@ -21,11 +21,11 @@
 #include <QtCore/QUrl>
 #include <QtCore/QStringList>
 
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QMessageBox>
 
-#include <QtWebKit/QWebPage>
-#include <QtWebKit/QWebFrame>
-#include <QtWebKit/QWebElement>
+#include <QtWebKit/qwebelement.h>
+#include <QtWebKitWidgets/QWebPage>
+#include <QtWebKitWidgets/QWebFrame>
 
 #include <navitconf/data/TreeItem.h>
 

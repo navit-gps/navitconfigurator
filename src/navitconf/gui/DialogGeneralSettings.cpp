@@ -23,8 +23,8 @@
 
 #include <QtXml/QDomNode>
 
-#include <QtGui/QMessageBox>
-#include <QtGui/QComboBox>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QComboBox>
 
 #include <navitconf/file/Settings.h>
 #include <navitconf/data/TreeItem.h>

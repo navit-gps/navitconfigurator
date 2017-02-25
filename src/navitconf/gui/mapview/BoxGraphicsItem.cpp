@@ -20,9 +20,9 @@
 
 #include <QtCore/QObject>
 
-#include <QtGui/QApplication>
 #include <QtGui/QBrush>
-#include <QtGui/QGraphicsScene>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QApplication>
 
 #include <navitconf/file/Settings.h>
 

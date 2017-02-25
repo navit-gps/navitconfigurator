@@ -23,12 +23,12 @@
 #include <QtCore/QMap>
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QWidget>
-#include <QtGui/QItemDelegate>
-#include <QtGui/QStyleOptionViewItem>
-#include <QtGui/QStyledItemDelegate>
-#include <QtGui/QComboBox>
-#include <QtGui/QTableView>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QItemDelegate>
+#include <QtWidgets/QStyleOptionViewItem>
+#include <QtWidgets/QStyledItemDelegate>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QTableView>
 
 class TableComboBox;
 

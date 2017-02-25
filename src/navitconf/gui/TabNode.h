@@ -23,11 +23,11 @@
 #include <QtCore/QString>
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QLineEdit>
-#include <QtGui/QTableView>
-#include <QtGui/QPlainTextEdit>
 #include <QtGui/QStandardItem>
 #include <QtGui/QStandardItemModel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QPlainTextEdit>
 
 #include "../data/TreeItem.h"
 #include "../data/TreeModel.h"

@@ -23,7 +23,7 @@
 #include <QtCore/QVariant>
 #include <QtCore/QString>
 
-#include <QtGui/QUndoCommand>
+#include <QtWidgets/QUndoCommand>
 
 /** forward declaration */
 class TreeModel;

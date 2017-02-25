@@ -21,7 +21,7 @@
 
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QUndoCommand>
+#include <QtWidgets/QUndoCommand>
 
 #include "../TreeItem.h"
 

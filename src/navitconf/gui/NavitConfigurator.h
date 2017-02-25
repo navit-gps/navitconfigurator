@@ -24,10 +24,10 @@
 #include <QtCore/QList>
 #include <QtCore/QModelIndex>
 
-#include <QtGui/QMainWindow>
-#include <QtGui/QWidget>
 #include <QtGui/QCloseEvent>
-#include <QtGui/QAction>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QAction>
 
 #include <ui_NavitConfigurator.h>
 

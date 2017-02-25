@@ -12,23 +12,22 @@
 win32 {
 	# aktivate static build to include all dlls in one exe file
 	# CONFIG += static
-	
 }
 CONFIG += debug_and_release
 TEMPLATE = app
-QT += core \
-    gui \
-    xml \
-    network \
-    webkit
-INCLUDEPATH += src \
-    src/zlib
 FORMS += src/navitconf/gui/DialogMapView.ui \
     src/navitconf/gui/DialogGeneralSettings.ui \
     src/navitconf/gui/DialogManageNavitMenu.ui \
     src/navitconf/gui/DialogStartingPosition.ui \
     src/navitconf/gui/DialogDownload.ui \
     src/navitconf/gui/NavitConfigurator.ui
+QT += core \
+    gui \
+    xml \
+    network \
+    webkitwidgets
+INCLUDEPATH += src \
+    src/zlib
 HEADERS += src/navitconf/gui/mapview/BoxItemAttribute.h \
     src/navitconf/gui/mapview/TableComboBox.h \
     src/navitconf/gui/mapview/BoxItemDelegate.h \

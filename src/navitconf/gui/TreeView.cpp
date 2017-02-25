@@ -23,8 +23,8 @@
 #include <QtCore/qnamespace.h>
 #include <QtCore/QList>
 
-#include <QtGui/QMenu>
-#include <QtGui/QHeaderView>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QHeaderView>
 
 #include <navitconf/data/TreeItem.h>
 #include <navitconf/data/TreeModel.h>
@@ -61,7 +61,7 @@ void TreeView::setupUi(QWidget& parent, QGridLayout& gridLayout) {
 void TreeView::setModel(QAbstractItemModel* model) {
 	QTreeView::setModel(model);
 	expandToDepth(1);
-	header()->setResizeMode(0, QHeaderView::ResizeToContents);
+	header()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 //	setColumnWidth(0, 170);
 }
 

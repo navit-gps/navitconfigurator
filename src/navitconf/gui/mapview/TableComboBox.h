@@ -21,8 +21,8 @@
 
 #include <QtCore/QMetaType>
 
-#include <QtGui/QComboBox>
-#include <QtGui/QWidget>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QWidget>
 
 #include "BoxItemDelegate.h"
 

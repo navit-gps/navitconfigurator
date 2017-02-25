@@ -23,13 +23,13 @@
 #include <QtCore/QPointF>
 #include <QtCore/QString>
 
-#include <QtGui/QGraphicsRectItem>
-#include <QtGui/QGraphicsItem>
-#include <QtGui/QGraphicsSceneMouseEvent>
 #include <QtGui/QPainter>
-#include <QtGui/QStyleOptionGraphicsItem>
-#include <QtGui/QWidget>
 #include <QtGui/QImage>
+#include <QtWidgets/QGraphicsRectItem>
+#include <QtWidgets/QGraphicsItem>
+#include <QtWidgets/QGraphicsSceneMouseEvent>
+#include <QtWidgets/QStyleOptionGraphicsItem>
+#include <QtWidgets/QWidget>
 
 #include <navitconf/data/TreeItem.h>
 #include <navitconf/data/TreeModel.h>

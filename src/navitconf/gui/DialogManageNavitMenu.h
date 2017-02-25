@@ -22,8 +22,8 @@
 #include <QtCore/QString>
 #include <QtCore/QList>
 
-#include <QtGui/QWidget>
-#include <QtGui/QDialog>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QDialog>
 
 #include <QtXml/QDomNode>
 

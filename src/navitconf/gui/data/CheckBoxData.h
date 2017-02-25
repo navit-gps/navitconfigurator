@@ -20,7 +20,7 @@
 #define CHECKBOXDATA_H_
 
 #include <QtCore/QString>
-#include <QtGui/QCheckBox>
+#include <QtWidgets/QCheckBox>
 
 #include <navitconf/data/TreeModel.h>
 

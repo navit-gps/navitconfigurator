@@ -18,7 +18,7 @@
 
 #include "DialogDownload.h"
 
-#include <QtGui/QMessageBox>
+#include <QtWidgets/QMessageBox>
 
 #include <navitconf/file/Settings.h>
 #include <navitconf/file/UnZipFile.h>

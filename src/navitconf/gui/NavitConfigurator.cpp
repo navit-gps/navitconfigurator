@@ -21,10 +21,10 @@
 #include <QtCore/QStringList>
 #include <QtCore/QUrl>
 
-#include <QtGui/QUndoStack>
-#include <QtGui/QFileDialog>
-#include <QtGui/QMessageBox>
-#include <QtGui/QUndoView>
+#include <QtWidgets/QUndoStack>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QUndoView>
 #include <QtGui/QIcon>
 #include <QtGui/QDesktopServices>
 
@@ -326,7 +326,7 @@ QString NavitConfigurator::getHint(const QString& description, const QString& re
 }
 
 void NavitConfigurator::onMenuDownloadMap() {
-	if (!QDesktopServices::openUrl(QUrl(tr("http://jff-webhosting.net/osm/navit/world/")))) {
+	if (!QDesktopServices::openUrl(QUrl(tr("https://jff-webhosting.net/daten/osm/navit/")))) {
 		QMessageBox::critical(this, tr("Error"), tr("The URL could not be opened in a browser."));
 	}
 }
@@ -337,7 +337,7 @@ void NavitConfigurator::onMenuAbout() {
 					"<p>Credits go to the developer of Navit, Qt, QuaZip and zlib. The icons are from <a href='http://openiconlibrary.sourceforge.net/'>openiconlibrary.sourceforge.net</a>.</p>"
 					"<p>This program is developed for PAdI (Praktische Aspekte der Informatik) at the technical university in Brunswick.</p>"
 					"<p>For updates see <a href='http://sourceforge.net/p/navitconfigurat'>sourceforge.net/p/navitconfigurat</a>.</p>"
-					"<p>Copyright 2012 by Raimar B&uuml;hmann</p>"
+					"<p>Copyright 2012-2017 by Raimar B&uuml;hmann</p>"
 			)
 	);
 }

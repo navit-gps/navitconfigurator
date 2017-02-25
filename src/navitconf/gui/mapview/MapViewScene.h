@@ -21,8 +21,8 @@
 
 #include <QtCore/QList>
 
-#include <QtGui/QGraphicsScene>
-#include <QtGui/QGraphicsItem>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QGraphicsItem>
 //#include <QtGui/QGraphicsSceneDragDropEvent>
 
 #include "BoxGraphicsItemListener.h"

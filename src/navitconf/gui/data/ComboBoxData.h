@@ -21,7 +21,7 @@
 
 #include <QtCore/QString>
 #include <QtCore/QStringList>
-#include <QtGui/QComboBox>
+#include <QtWidgets/QComboBox>
 
 #include <navitconf/data/TreeModel.h>
 

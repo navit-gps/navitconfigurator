@@ -20,11 +20,11 @@
 
 #include <cstddef>
 
-#include <QtCore/QTextStream>
 #include <QtCore/QFile>
+#include <QtCore/QTextStream>
+#include <QtCore/QItemSelectionModel>
 
-#include <QtGui/QMessageBox>
-#include <QtGui/QItemSelectionModel>
+#include <QtWidgets/QMessageBox>
 
 Document::Document(TabNode& tabNode)
 :
@@ -100,7 +100,7 @@ void Document::save(const QString& filename) {
 	}
 //	QTextStream textStream(&file);
 //	domDocument->save(textStream, 3);
-	if (!file.write(domDocument->toString().toAscii())) {
+	if (!file.write(domDocument->toString().toLatin1())) {
 		file.close();
 		throw QString(tr("Writing file failed: "))+file.fileName()+": "+file.errorString();
 	}

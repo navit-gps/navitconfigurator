@@ -19,9 +19,9 @@
 #ifndef DIALOGGENERALSETTINGS_H
 #define DIALOGGENERALSETTINGS_H
 
-#include <QtGui/QWidget>
-#include <QtGui/QDialog>
-#include <QtGui/QCheckBox>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QCheckBox>
 
 #include "ui_DialogGeneralSettings.h"
 

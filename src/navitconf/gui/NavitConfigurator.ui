@@ -27,7 +27,16 @@
   </property>
   <widget class="QWidget" name="widgetMain">
    <layout class="QGridLayout" name="gridLayout">
-    <property name="margin">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
      <number>0</number>
     </property>
     <item row="0" column="0">
@@ -67,10 +76,19 @@
         <bool>false</bool>
        </property>
        <layout class="QGridLayout" name="widgetLeftGridLayout">
-        <property name="verticalSpacing">
+        <property name="leftMargin">
          <number>3</number>
         </property>
-        <property name="margin">
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>3</number>
+        </property>
+        <property name="verticalSpacing">
          <number>3</number>
         </property>
         <item row="0" column="0">
@@ -121,10 +139,19 @@
             <string>Selected &amp;Node</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_2">
-            <property name="horizontalSpacing">
+            <property name="leftMargin">
              <number>3</number>
             </property>
-            <property name="margin">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="rightMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <property name="horizontalSpacing">
              <number>3</number>
             </property>
             <item row="0" column="0">
@@ -161,7 +188,16 @@
                 <string>A&amp;ttributes</string>
                </attribute>
                <layout class="QGridLayout" name="gridLayout_7">
-                <property name="margin">
+                <property name="leftMargin">
+                 <number>3</number>
+                </property>
+                <property name="topMargin">
+                 <number>3</number>
+                </property>
+                <property name="rightMargin">
+                 <number>3</number>
+                </property>
+                <property name="bottomMargin">
                  <number>3</number>
                 </property>
                 <item row="0" column="0">
@@ -181,7 +217,16 @@
                 <string>&amp;Comment</string>
                </attribute>
                <layout class="QGridLayout" name="gridLayout_8">
-                <property name="margin">
+                <property name="leftMargin">
+                 <number>3</number>
+                </property>
+                <property name="topMargin">
+                 <number>3</number>
+                </property>
+                <property name="rightMargin">
+                 <number>3</number>
+                </property>
+                <property name="bottomMargin">
                  <number>3</number>
                 </property>
                 <item row="0" column="0">
@@ -203,7 +248,16 @@
                 <string>So&amp;urce</string>
                </attribute>
                <layout class="QGridLayout" name="gridLayout_9">
-                <property name="margin">
+                <property name="leftMargin">
+                 <number>3</number>
+                </property>
+                <property name="topMargin">
+                 <number>3</number>
+                </property>
+                <property name="rightMargin">
+                 <number>3</number>
+                </property>
+                <property name="bottomMargin">
                  <number>3</number>
                 </property>
                 <item row="0" column="0">
@@ -229,7 +283,16 @@
             <string>Conso&amp;le</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_5">
-            <property name="margin">
+            <property name="leftMargin">
+             <number>3</number>
+            </property>
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="rightMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
              <number>3</number>
             </property>
             <property name="spacing">
@@ -285,7 +348,7 @@
      <x>0</x>
      <y>0</y>
      <width>612</width>
-     <height>24</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -557,7 +620,7 @@
  <connections>
   <connection>
    <sender>actionOpen</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuOpen()</slot>
    <hints>
@@ -573,7 +636,7 @@
   </connection>
   <connection>
    <sender>actionNew</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuNew()</slot>
    <hints>
@@ -589,7 +652,7 @@
   </connection>
   <connection>
    <sender>actionSave</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuSave()</slot>
    <hints>
@@ -605,7 +668,7 @@
   </connection>
   <connection>
    <sender>actionSaveAs</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuSaveAs()</slot>
    <hints>
@@ -621,7 +684,7 @@
   </connection>
   <connection>
    <sender>actionRecent1</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRecent1()</slot>
    <hints>
@@ -637,7 +700,7 @@
   </connection>
   <connection>
    <sender>actionRecent2</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRecent2()</slot>
    <hints>
@@ -653,7 +716,7 @@
   </connection>
   <connection>
    <sender>actionRecent3</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRecent3()</slot>
    <hints>
@@ -669,7 +732,7 @@
   </connection>
   <connection>
    <sender>actionExit</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>close()</slot>
    <hints>
@@ -685,7 +748,7 @@
   </connection>
   <connection>
    <sender>actionUndo</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuUndo()</slot>
    <hints>
@@ -701,7 +764,7 @@
   </connection>
   <connection>
    <sender>actionRedo</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRedo()</slot>
    <hints>
@@ -717,7 +780,7 @@
   </connection>
   <connection>
    <sender>actionDownloadMap</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuDownloadMap()</slot>
    <hints>
@@ -733,7 +796,7 @@
   </connection>
   <connection>
    <sender>actionAbout</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuAbout()</slot>
    <hints>
@@ -749,7 +812,7 @@
   </connection>
   <connection>
    <sender>actionSelectStartingPosition</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuSelectStartingPosition()</slot>
    <hints>
@@ -765,7 +828,7 @@
   </connection>
   <connection>
    <sender>actionRun</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuRun()</slot>
    <hints>
@@ -781,7 +844,7 @@
   </connection>
   <connection>
    <sender>actionManageNavitMenu</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuManageNavitMenu()</slot>
    <hints>
@@ -797,7 +860,7 @@
   </connection>
   <connection>
    <sender>actionGeneralSettings</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuGeneralSettings()</slot>
    <hints>
@@ -829,7 +892,7 @@
   </connection>
   <connection>
    <sender>actionInstallNavit</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuInstallNavit()</slot>
    <hints>
@@ -845,7 +908,7 @@
   </connection>
   <connection>
    <sender>actionNavitViewEditor</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>NavitConfiguratorClass</receiver>
    <slot>onMenuNavitViewEditor()</slot>
    <hints>

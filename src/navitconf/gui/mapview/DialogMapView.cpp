@@ -26,10 +26,10 @@
 
 #include <QtXml/QDomNode>
 
-#include <QtGui/QMessageBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QGraphicsRectItem>
 #include <QtGui/QStandardItem>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QGraphicsRectItem>
 
 #include <navitconf/file/Settings.h>
 #include <navitconf/data/TreeItem.h>
@@ -78,8 +78,6 @@ DialogMapView::~DialogMapView() {
 }
 
 void DialogMapView::initTableViewBoxProperties() {
-	// resize first column automatically
-	ui.tableViewBoxProperties->horizontalHeader()->setResizeMode(0, QHeaderView::ResizeToContents);
 	// select only one row
 	ui.tableViewBoxProperties->setSelectionMode(QAbstractItemView::SingleSelection);
 	ui.tableViewBoxProperties->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -107,6 +105,8 @@ void DialogMapView::initTableViewBoxProperties() {
 	ui.tableViewBoxProperties->setEditTriggers(QAbstractItemView::SelectedClicked | QAbstractItemView::EditKeyPressed);
 	// set data model for table view
 	ui.tableViewBoxProperties->setModel(&tableModel);
+	// resize first column automatically
+	ui.tableViewBoxProperties->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 }
 
 void DialogMapView::fillGraphicsView() {

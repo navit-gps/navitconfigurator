@@ -5,6 +5,8 @@
 /object_script.NavitConfigurator.Release
 /navitconfigurator
 /NavitConfigurator.exe
+/NavitConfigurator.pro.user
+/.qmake.stash
 /debug/*
 /release/*
 /ui_*.h

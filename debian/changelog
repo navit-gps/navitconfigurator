@@ -1,4 +1,12 @@
-navitconfigurator (1.0.2) stable; urgency=low
+navitconfigurator (1.0.2-16) stable; urgency=low
+
+  * Removed watch.ex file
+  * Changed version in file files
+  * Moved Recommends tag after Depends
+
+ -- Raimar Bühmann <navitconfigurator@web.de>  Thu, 05 Feb 2013 23:53:00 +0200
+
+navitconfigurator (1.0.2-15) stable; urgency=low
 
   * Added recommends line in control file pointing to android-tools-adb
 

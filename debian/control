@@ -3,7 +3,6 @@ Section: editors
 Priority: extra
 Maintainer: Raimar Bühmann <navitconfigurator@web.de>
 Build-Depends: debhelper, cdbs, libqt4-dev, libqtwebkit-dev
-Recommends: android-tools-adb
 Standards-Version: 3.9.2
 Homepage: http://sourceforge.net/projects/navitconfigurat/
 Vcs-Git: git://git.code.sf.net/p/navitconfigurat/code
@@ -12,6 +11,7 @@ Vcs-Browser: http://sourceforge.net/p/navitconfigurat/code/
 Package: navitconfigurator
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: android-tools-adb
 Description: NavitConfigurator edits your navit.xml file
  NavitConfigurator is an editor for configuring the
  open source navigation program Navit. It supports

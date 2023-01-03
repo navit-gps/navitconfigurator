@@ -20,6 +20,7 @@
 
 #include <QtCore/QUrl>
 #include <QtCore/QStringList>
+#include <QAction>
 
 #include <QtWidgets/QMessageBox>
 
@@ -69,8 +70,8 @@ void DialogStartingPosition::loadFinished(bool isOK) {
 		}
 	}
 	// FIXME: do not allow back with Back-Space key nor context menu Back (does not work!!!)
-	//ui.webView->pageAction(QWebEnginePage::Back)->setEnabled(false);
-	//ui.webView->pageAction(QWebEnginePage::Forward)->setEnabled(false);
+	ui.webView->pageAction(QWebEnginePage::Back)->setEnabled(false);
+	ui.webView->pageAction(QWebEnginePage::Forward)->setEnabled(false);
 }
 
 void DialogStartingPosition::accept() {

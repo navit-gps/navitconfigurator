@@ -326,7 +326,7 @@ QString NavitConfigurator::getHint(const QString& description, const QString& re
 }
 
 void NavitConfigurator::onMenuDownloadMap() {
-	if (!QDesktopServices::openUrl(QUrl(tr("https://jff-webhosting.net/daten/osm/navit/")))) {
+	if (!QDesktopServices::openUrl(QUrl(tr("https://github.com/navit-gps/gh-actions-mapserver/releases/latest")))) {
 		QMessageBox::critical(this, tr("Error"), tr("The URL could not be opened in a browser."));
 	}
 }

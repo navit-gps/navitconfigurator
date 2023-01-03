@@ -25,7 +25,7 @@ QT += core \
     gui \
     xml \
     network \
-    webkitwidgets
+    webenginewidgets
 INCLUDEPATH += src \
     src/zlib
 HEADERS += src/navitconf/gui/mapview/BoxItemAttribute.h \

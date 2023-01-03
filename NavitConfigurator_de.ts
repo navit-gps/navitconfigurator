@@ -581,9 +581,8 @@ sudo adb root</source>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="329"/>
-        <source>https://jff-webhosting.net/daten/osm/navit/</source>
-        <translatorcomment>Open the specific europe page instead of the world page for downloading a map.</translatorcomment>
-        <translation>https://jff-webhosting.net/daten/osm/navit/europe/</translation>
+        <source>https://github.com/navit-gps/gh-actions-mapserver/releases/latest/</source>
+        <translation>https://github.com/navit-gps/gh-actions-mapserver/releases/latest</translation>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.cpp" line="330"/>
@@ -725,13 +724,13 @@ sudo adb root</source>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.ui" line="384"/>
-        <source>&amp;Download Map (jff-webhosting.net)</source>
-        <translation>Karte &amp;Downloaden (jff-webhosting.net)</translation>
+        <source>&amp;Download Map (GitHub mapserver)</source>
+        <translation>Karte &amp;Downloaden (GitHub mapserver)</translation>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.ui" line="387"/>
-        <source>Open your default browser to manually download a map from http://jff-webhosting.net</source>
-        <translation>Öffnet den Standard Browser, um eine Karte von http://jff-webhosting.net manuell herunter zu laden</translation>
+        <source>Open your default browser to manually download a map from GitHub mapserver</source>
+        <translation>Öffnet den Standard Browser, um eine Karte vom GitHub mapserver manuell herunter zu laden</translation>
     </message>
     <message>
         <location filename="src/navitconf/gui/NavitConfigurator.ui" line="392"/>

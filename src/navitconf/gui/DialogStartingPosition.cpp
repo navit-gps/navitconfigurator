@@ -23,9 +23,7 @@
 
 #include <QtWidgets/QMessageBox>
 
-#include <QtWebKit/qwebelement.h>
-#include <QtWebKitWidgets/QWebPage>
-#include <QtWebKitWidgets/QWebFrame>
+#include <QWebEnginePage>
 
 #include <navitconf/data/TreeItem.h>
 
@@ -39,7 +37,7 @@ DialogStartingPosition::DialogStartingPosition(QWidget& parent, TreeModel& treeM
 {
 	ui.setupUi(this);
 	// only signal linkClicked() is emitted (only program can change URL)
-	ui.webView->page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
+	//ui.webView->page()->setLinkDelegationPolicy(QWebEnginePage::DelegateAllLinks);
 	ui.webView->setUrl(QUrl("http://itouchmap.com/latlong.html"));
 	// connect listener for loaded page
 	connect(ui.webView, SIGNAL(loadFinished(bool)),
@@ -71,8 +69,8 @@ void DialogStartingPosition::loadFinished(bool isOK) {
 		}
 	}
 	// FIXME: do not allow back with Back-Space key nor context menu Back (does not work!!!)
-	ui.webView->pageAction(QWebPage::Back)->setEnabled(false);
-	ui.webView->pageAction(QWebPage::Forward)->setEnabled(false);
+	//ui.webView->pageAction(QWebEnginePage::Back)->setEnabled(false);
+	//ui.webView->pageAction(QWebEnginePage::Forward)->setEnabled(false);
 }
 
 void DialogStartingPosition::accept() {
@@ -110,11 +108,16 @@ void DialogStartingPosition::accept() {
 
 QString DialogStartingPosition::getInputValue(const QString& idName) {
 	QString javascriptCommand = QString("document.getElementById('%1').value").arg(idName);
-	return ui.webView->page()->mainFrame()->
-			evaluateJavaScript(javascriptCommand).toString();
+	QString result = "";
+	ui.webView->page()->runJavaScript(javascriptCommand,[&result](const QVariant result_){result = result_.toString();});
+	while (result == "")
+	{
+        	QApplication::processEvents();
+    	}
+	return result;
 }
 
 void DialogStartingPosition::setInputValue(const QString& idName, const QString& idValue) {
 	QString javascriptCommand = QString("document.getElementById('%1').value='%2'").arg(idName).arg(idValue);
-	ui.webView->page()->mainFrame()->evaluateJavaScript(javascriptCommand);
+	ui.webView->page()->runJavaScript(javascriptCommand);
 }

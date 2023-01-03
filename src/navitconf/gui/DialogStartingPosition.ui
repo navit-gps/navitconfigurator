@@ -24,7 +24,7 @@
   </property>
   <layout class="QVBoxLayout">
    <item>
-    <widget class="QWebView" name="webView">
+    <widget class="QWebEngineView" name="webView">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -59,9 +59,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>QWebView</class>
+   <class>QWebEngineView</class>
    <extends>QWidget</extends>
-   <header>QtWebKit/QWebView</header>
+   <header>QWebEngineView</header>
   </customwidget>
  </customwidgets>
  <resources/>

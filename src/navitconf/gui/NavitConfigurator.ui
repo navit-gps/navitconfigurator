@@ -444,10 +444,10 @@
   </action>
   <action name="actionDownloadMap">
    <property name="text">
-    <string>&amp;Download Map (jff-webhosting.net)</string>
+    <string>&amp;Download Map (github mapserver)</string>
    </property>
    <property name="toolTip">
-    <string>Open your default browser to manually download a map from http://jff-webhosting.net</string>
+    <string>Open your default browser to manually download a map from https://github.com/navit-gps/gh-actions-mapserver/releases/latest</string>
    </property>
   </action>
   <action name="actionAbout">
